@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: 
+    url(fonts/Ubuntu/Ubuntu-Light.ttf),
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: 
+    url(fonts/Ubuntu/Ubuntu-Medium.ttf),
+}
+
+body {
+    margin:0;
+    padding:0;
+    height: 14.93rem;
+    background-image: radial-gradient(circle, rgb(78,78,78) 1px, rgb(38, 38, 38) 1px);
+    background-size: 1.5rem 1.5rem;
+    background-position: center center;
+}
+
+.frame {
+    position: fixed;
+    width: 1008.8px;
+    height: 715px;
+    top:50%;
+    left: 50%;
+    border-radius: 6.5px;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 0px 100px 4px #121212;
+}
+
+.mainFrame {
+
+    box-sizing: border-box;
+
+    position: relative;
+    width: 806px;
+    height: 716px;
+    left: 202.4px;
+    top: 0.5px;
+
+    background: radial-gradient(30.91% 30.91% at 50% 50%, #4A4A4A 0%, #333333 100%);
+    border-radius: 0px 6.5px 6.5px 0px;
+
+}
+
+.dashboard {
+    position: absolute;
+    width: 800px;
+    height: 716px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.dashboard__upperText {
+    position: relative;
+    width: 158px;
+    height: 37px;
+    left: 31px;
+    top: 45px;
+
+    font-family: 'Ubuntu Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32.5px;
+    line-height: 37px;
+
+    color: #FFFFFF;
+
+
+}
+
+.dashboard__taskCounter {
+    position: relative;
+
+    width: 23px;
+    height: 22px;
+    left: 200.65px;
+    top: -30px;
+
+    font-family: 'Ubuntu Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5px;
+    line-height: 22px;
+
+    color: #48FF85;
+}
+
+.dashboard__taskFrame {
+    position: relative;
+    width: 800px;
+    height: 175px;
+    left: 0px;
+    top: 247px;
+}
+
+
+.dashboard__taskFrame__text {
+    position: relative;
+    width: 195px;
+    height: 21px;
+    left: 47px;
+    top: -58px;
+
+    font-family: 'Ubuntu Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.4em;
+
+    color: #797979;
+}
+
+.dashboard__taskFrame__textLine {
+    /* Line */
+
+    position: absolute;
+    width: 805px;
+    height: 0px;
+    left: 0px;
+    top: -30px;
+
+    border: 0.5px solid #797979;
+
+}
+
+.dashboard__taskFrame__taskList {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 25px;
+
+    position: relative;
+    width: 800px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
+}
+
+
+.dashboard__listFrame {
+
+    position: relative;
+    width: 800px;
+    height: 175px;
+    left: 0px;
+    top: 471px;
+
+
+}

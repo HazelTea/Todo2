@@ -5,8 +5,6 @@ import { fileURLToPath } from 'url'
 import dbFunctions from './db.js'
 
 const app = express()
-
-dbFunctions.setup()
 app.use(express.json())
 app.use(cors())
 
@@ -19,6 +17,12 @@ app.get('/', (req, res) => {
 
 app.get('/tasks', (req,res) => {
     dbFunctions.getTasks(res)
+})
+
+app.get('/tasks/:id',(req,res) => {
+    const id = req.params.id
+    console.log(id)
+    dbFunctions.getTask(res,id)
 })
 
 app.post('/tasks',(req,res) => {

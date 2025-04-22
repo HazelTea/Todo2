@@ -49,6 +49,13 @@ const dbFunctions = {
     })
   },
 
+  getTask(res,id) {
+    dbCon.query(`SELECT * FROM tasks WHERE (id = ${id}) `,(err,result) => {
+      if (err) throw err
+      res.json(result)
+    })
+  },
+
   createTask(res,title,desc) {
     dbCon.query(`INSERT INTO tasks (title, description) VALUES ('${title}', '${desc}')`,(err,result) => {
       if (err) return err
