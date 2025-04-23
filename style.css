@@ -89,16 +89,19 @@ body {
     color: #48FF85;
 }
 
-.dashboard__taskFrame {
+.dashboard__tasksFrame {
     position: relative;
-    width: 800px;
+    width: 806px;
     height: 175px;
     left: 0px;
-    top: 247px;
+    top: 125px;
+
+    border-radius: 0px;
+
 }
 
 
-.dashboard__taskFrame__text {
+.dashboard__tasksFrame__text {
     position: relative;
     width: 195px;
     height: 21px;
@@ -115,42 +118,68 @@ body {
     color: #797979;
 }
 
-.dashboard__taskFrame__textLine {
+.dashboard__tasksFrame__textLine {
     /* Line */
 
     position: absolute;
-    width: 805px;
+    width: 804px;
     height: 0px;
     left: 0px;
     top: -30px;
 
-    border: 0.5px solid #797979;
+    border: 1px solid #797979;
 
 }
 
-.dashboard__taskFrame__taskList {
+.dashboard__listsFrame {
+    position: relative;
+    width: 806px;
+    height: 175px;
+    left: 0px;
+    top: 175px;
+}
 
+.dashboard__listsFrame__text {
+    position: relative;
+    width: 195px;
+    height: 21px;
+    left: 47px;
+    top: -58px;
+
+    font-family: 'Ubuntu Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.4em;
+
+    color: #797979;
+}
+
+.dashboard__listsFrame__textLine {
+    position: absolute;
+    width: 804px;
+    height: 0px;
+    left: 0px;
+    top: -30px;
+
+    border: 1px solid #797979;
+}
+
+.dashboard__frameList {
+
+    position:static;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 40px;
     gap: 25px;
-
-    position: relative;
-    width: 800px;
+    width: 806px;
     height: 144px;
-    left: 0px;
-    top: 0px;
-}
-
-
-.dashboard__listFrame {
-
-    position: relative;
-    width: 800px;
-    height: 175px;
-    left: 0px;
-    top: 471px;
-
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 }
